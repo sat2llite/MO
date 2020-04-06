@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>마리오아울렛</title>
+<!--파비콘 생성-->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/import.css">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.css">
+
+<!-- Link Animation -->
+<link rel="stylesheet" href="./css/kissui.css">
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="stylesheet" href="./build/scrollanim.min.css">
+
+<!--FullDown Menu js-->
+<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/guide.js"></script>
+<script type="text/javascript" src="./js/hover.js"></script>
+<script type="text/javascript" src="./js/TweenMax.js"></script>
+<script type="text/javascript" src="./js/TweenLite.js"></script>
+
+<!--QNB_menu-->
+<script src="./js/init.js"></script>
+
+</head>
+<body>
+	<header id="sub"><!-- header-->
+		<div class="header01">
+			<div class="headerD"><!-- headerD-->	
+		
+			<!--상단 로고-->
+			<h1 class="logo"><a href="./index.html"><img src="./images/common/logo_2.png" alt="logo" /></a></h1>
+			
+			<!--gnb-->
+				<div class="gnbD">
+					<ul class="gnb">
+						<li class="gL1">
+							<a href="store.html" class="oneD">매장안내</a>
+							<div class="twoD1">
+								<a href="store.html"><span>층별안내</span></a>
+								<a href="store.html"><span>1관</span></a>
+								<a href="store.html"><span>2관</span></a>
+								<a href="store.html"><span>3관</span></a>
+							</div>
+						</li> 
+						
+						<li class="gL2">
+							<a href="foods.html" class="oneD">식당가안내</a>
+							<div class="twoD2">
+								<a href="foods.html"><span>식당가별 안내</span></a>
+								<a href="foods.html"><span>위치별 안내</span></a>											
+							</div>
+						</li>  
+					
+						<li class="gL3">
+							<a href="event.html" class="oneD">행사안내</a>
+							<div class="twoD3">
+								<a href="event.html"><span>쇼핑정보</span></a>
+								<a href="event.html"><span>문화공연</span></a>	
+							</div>
+						</li>  
+					
+						<li class="gL4">
+							<a href="service.html" class="oneD">고객서비스</a>
+							<div class="twoD4">
+								<a href="service.html"><span>멤버십 서비스</span></a>
+								<a href="service.html"><span>편의시설</span></a>
+								<a href="service.html"><span>자주 묻는 질문</span></a>
+								<a href="service.html"><span>1:1 문의</span></a>
+							</div>	
+						</li>  
+					
+						<li class="gL5">
+							<a href="company.html" class="oneD">마리오아울렛 소개</a>
+							<div class="twoD5">
+								<a href="company.html"><span>회사소개</span></a>
+								<a href="company.html"><span>마리오아울렛 뉴스</span></a>
+								<a href="company.html"><span>오시는 길</span></a>
+								<a href="company.html"><span>주차안내</span></a>
+							</div>
+						</li> 					
+						<li class="gL6"></li>
+							<a href="javascript:" class="oneD"><img src="./images/common/mariomall.png" /></a>
+						</li> 													
+					</ul><!--//gnb-->
+				</div><!--// gnbD -->
+			</div><!--// headerD -->
+		</div><!--//header01-->
+
+		<div class="header02">
+			<div class="inner">
+				<!--//태블릿 로고-->
+				<!-- <h1 class="tablet_logo"><a href="./index.html"><img src="./images/common/tablet_logo.png" alt="logo" /></a></h1> -->
+				<!--메뉴-->
+				<!-- <h1 class="tm_menu"><a href="#"><img src="./images/common/main_menu.gif" alt="menu" /></a></h1> -->
+
+				<div class="media-header">
+					<h1><a href="./index.html"><img src="./images/common/tablet_logo2.png" /></a></h1>   
+					
+					<a class="menu-icon" href="#"><img src="./images/common/sub_menu.gif" alt="menu" /></a>
+				<ul class="side-menu" style="overflow:auto;position:fixed;">
+				<h2 class="title"><a href="./index.html"><img src="./images/common/tablet_logo.png" /></a></h2>
+				<ul id="nav">
+					<li><a href="./store.html">매장안내</a>
+						<ul>
+							<li><a href="./store.html">층별안내</a></li>
+							<li><a href="./store.html">1관</a></li>
+							<li><a href="./store.html">2관</a></li>
+							<li><a href="./store.html">3관</a></li>
+						</ul>
+					</li>
+					<li><a href="./foods.html">식당가안내</a>
+						<ul>
+							<li><a href="./foods.html">식당가별 안내</a></li>
+							<li><a href="./foods.html">위치별 안내</a></li>
+						</ul>
+					</li>
+					<li><a href="./event.html">행사안내</a>
+						<ul>
+							<li><a href="./event.html">쇼핑정보</a></li>
+							<li><a href="./event.html">문화공연</a></li>
+						</ul>
+					</li>
+					<li><a href="./service.html">고객서비스</a>
+						<ul>
+							<li><a href="./service.html">멤버십 서비스</a></li>
+							<li><a href="./service.html">편의시설</a></li>
+							<li><a href="./service.html">자주 묻는 질문</a></li>
+							<li><a href="./service.html">1:1 문의</a></li>
+						</ul>
+					</li>
+					<li><a href="./company.html">마리오아울렛 소개</a>
+						<ul>
+							<li><a href="./company.html">회사소개</a></li>
+							<li><a href="./company.html">마리오아울렛 뉴스</a></li>
+							<li><a href="./company.html">오시는 길</a></li>
+							<li><a href="./company.html">주차안내</a></li>
+						</ul>
+					</li>
+					</div>
+				</ul>
+			</div>
+
+			</div><!--//inner-->
+		</div><!--//header02-->
+
+</header>
+
+<section id="service_visual">
+    	<dl>
+			<dt>The World Fashion City</dt>
+			<dt>Mario Outlet</dt>
+		</dl>
+		
+		<!-- <ul id="page">
+			<li><a href="#" class="active"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul> -->
+</section><!--//store_visual-->
+
+<section id="service_contents">
+	<div id="tabs" class="tabs">
+		<nav>
+			<ul>
+				<li><a href="#section-1" class="icon-shop"><span>멤버십서비스</span></a></li>
+				<li><a href="#section-2" class="icon-cup"><span>편의시설</span></a></li>
+				<li><a href="#section-4" class="icon-cup"><span>자주 묻는 질문</span></a></li>
+				<li><a href="#section-5" class="icon-cup"><span>1:1문의</span></a></li>
+			</ul>
+		</nav>
+		<div class="content">
+			<section id="section-1">
+				<div class="outer">
+					<div id="card">
+						<dl>
+							<dd id="img"><img src="./images/sub/sub_card.png" /></dd>
+						</dl>
+						<dl id="text">
+							<dt>쇼핑의 즐거움이 두 배가 되는<br /><span>마리오 보너스카드</span></dt>
+							<dd>마리오아울렛의 다양한 혜택과 서비스를 누릴 수 있는 멤버십 서비스로<br>
+								상품구매 후 적립한 포인트로 마리오아울렛 상품권을 교환 하실 수 있습니다.</dd>
+							<div id="pc">
+								<dd><a href="javascript:;"><img src="./images/sub/sub_btn01.png" /></a></dd>
+								<dd><a href="javascript:;"><img src="./images/sub/sub_btn02.png" /></a></dd>
+							</div>
+
+							<div id="tablet">
+								<dd><a href="javascript:;"><img src="./images/sub/sub_tablet_btn01.png" /></a></dd>
+								<dd><a href="javascript:;"><img src="./images/sub/sub_tablet_btn02.png" /></a></dd>
+							</div>
+						</dl>
+					</div><!--//card-->
+			
+					<div id="bonuscard">
+						<h3>마리오보너스카드 안내</h3>
+			
+						<ul>
+							<li><img src="./images/sub/sub_card01.png" /></li>
+							<li><img src="./images/sub/sub_card02.png" /></li>
+							<li><img src="./images/sub/sub_card03.png" /></li>
+						</ul>
+					</div>
+			
+					<div id="point">
+						<h3>포인트</h3>
+						
+						<dl id="img">
+							<dd><img src="./images/sub/sub_point.png" /></dd>
+						</dl>
+						<dl id="text">
+							<dt>현금/카드/상품권으로 구매시 1,000원 당 10Point 적립</dt>
+							<dd>- 포인트 적립 불가매장: 3관 1층/2층/6층/7층/9층/10층/11층<br>
+								- 기타 임대매장은 고객센터에서 별도로 적립하여 드립니다. (커피빈, 맥도날드, 스무디킹, 카페 마리오 등)</dd>
+							<br/>
+							<dt>구매 당시 포인트 미적립시, 상품을 구매한 당일을 포함한 7일 이내 고객센터(1관8층,3관11층)에서 사후적립 가능</dt> 
+							<dd>- 영수증 및 결제카드 소지 필수(방문자(결제자)와 결제카드가 일치할 경우만 가능)</dd>
+						</dl>
+			
+						<dl id="sub_point01">
+							<dd><img src="./images/sub/sub_point01.png" /></dd>
+							<dt>포인트 유효기간</dt>
+							<dd>적립일로부터 2년 / 기간 경과 시 자동소멸</dd>
+						</dl>
+						<dl id="sub_point02">
+							<dd><img src="./images/sub/sub_point02.png" /></dd>
+							<dt>포인트 교환</dt>
+							<dd>누적포인트 10,000원 이상 시 10,000점단위로 상품권 교환<br>
+									(포인트 10,000점 = 10,000원 상품권)</dd>
+						</dl>
+					</div><!--//point-->
+			
+					<div id="point_change">
+						<h3>포인트 교환 방법</h3>
+			
+						<dl>
+							<dd><img src="./images/sub/sub_point_change.png" /></dd>
+							<dt>교환장소 : 마리오아울렛 고객센터(1관8층, 3관11층)</dt>
+						</dl>
+			
+						<h4>교환방법</h4>
+			
+						<ul>
+							<li><img src="./images/sub/sub_change01.png" /></li>
+							<li><img src="./images/sub/sub_change01.png" /></li>
+							<li><img src="./images/sub/sub_change01.png" /></li>
+							<li><img src="./images/sub/sub_change01.png" /></li>
+						</ul>
+						<p>- 포인트교환은 본인에 한하여 신분 확인 후 교환 가능합니다.(신분증 지참 필수)<br>
+							- 마리오아울렛몰에서 오프라인 포인트를 온라인으로 전환하여 사용하는 경우, 취소/반품에 의한 환원은 온라인 포인트로 변경됩니다. </p>
+					</div>
+				</div><!--//outer-->
+			</section><!--//section1-->
+
+			<section id="section-2">
+				<div class="inner">
+					<div class="img">
+						<h3 data-kui-anim="fadeInUp">편의시설</h3>
+					</div>
+
+					<div id="in">
+						<div class="s01">
+							<dl>
+								<dd id="info"><img src="./images/sub/info.png" /></dd>
+							</dl>
+
+							<dl id="text" data-kui-anim="fadeIn">
+								<dt>안내데스크</dt>
+								<dd>마리오아울렛 1관 1층</dd>
+							</dl>
+						</div>
+
+						<div class="s02">
+							<dl>
+								<dd><img src="./images/sub/info02.png" /></dd>
+							</dl>
+
+							<dl id="text" data-kui-anim="fadeIn">
+								<dd>
+									<dt>고객센터</dt>
+									<dd>마리오아울렛 1관 8층</dd>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="s03">
+							<dl>
+								<dd><img src="./images/sub/info.png" /></dd>
+							</dl>
+
+							<dl id="text" data-kui-anim="fadeIn">
+								<dd>
+									<dt>물품보관함</dt>
+									<dd>마리오아울렛 각 관 1층</dd>
+								</dd>
+							</dl>
+						</div>
+
+						<div class="s04">
+							<dl>
+								<dd><img src="./images/sub/info02.png" /></dd>
+							</dl>
+
+							<dl id="text" data-kui-anim="fadeIn">
+								<dd>
+									<dt>수선실</dt>
+									<dd>마리오아울렛 1관 4층</dd>
+								</dd>
+							</dl>
+						</div>
+					</div><!--//in-->
+				</div><!--//inner-->
+			</section><!--//section2-->
+
+			<section id="section-4">
+					<div class="inner">
+						<div id="company01">
+							<h3>자주 묻는 질문</h3>
+
+							<!-- <input id="userEmail1" name="userEmail1" type="text" /> -->
+	
+							<div class="cate_btn">
+								<a href="#">Q : 영업시간이 어떻게 되나요?</a>
+							</div>
+							<div class="cate_layer">
+								<ul>
+									<li><a href="#">A : &nbsp;&nbsp;1. 주중(월~목) 10:30~21:00<br> 2. 주말(금,토,일) 및 공휴일(대체 공휴일 포함) 10:30~21:30 <br>설날 당일 및 추석 당일의 경우는 점포사정에 따라 다르오니 <br>02-2109-7000 으로 문의주시면 상세하게 안내해 드리겠습니다.</a></li>
+								</ul>
+							</div><!--//cate_layer-->
+
+							<div class="cate_btn2"><a href="#">Q : 마리오아울렛 위치가 어떻게 되나요?</a></div>
+							<div class="cate_layer2">
+								<ul>
+									<li><a href="#">A : &nbsp;&nbsp;마리오 아울렛은 서울 금천구 디지털로 9길 23에 위치하고 있습니다. <br>[오시는길] 페이지에서 상세한 위치 확인이 가능하며 포탈 검색창에 "마리오아울렛" 입력을 통해서도 바로 확인이 가능합니다.</a></li>
+								</ul>
+							</div><!--//cate_layer-->
+
+							<div class="cate_btn3"><a href="#">Q : 고객센터 운영시간이 어떻게 되나요?</a></div>
+							<div class="cate_layer3">
+								<ul>
+									<li><a href="#">A : &nbsp;&nbsp;1. 주중(월~목) 10:30~21:00<br> 2. 주말(금,토,일) 및 공휴일(대체 공휴일 포함) 10:30~21:30</a></li>
+								</ul>
+							</div><!--//cate_layer-->
+
+							<div class="cate_btn4"><a href="#">Q : 마리오아울렛은 어떤 곳인가요?</a></div>
+							<div class="cate_layer4">
+								<ul>
+									<li><a href="#">A : &nbsp;&nbsp;마리오 아울렛은 시즌별 세일을 진행하는 백화점과는 달리 유명 브랜드의 고품질 의류를 90%~50% 할인된 가격으로 상시 판매를 하고 있습니다.<br> 자세한 내용은 [마리오아울렛]을 통해 확인하실 수 있습니다.</a></li>
+								</ul>
+							</div><!--//cate_layer-->
+
+							<div class="cate_btn5"><a href="#">Q : 의류 수선실은 있나요?</a></div>
+							<div class="cate_layer5">
+								<ul>
+									<li><a href="#">A : &nbsp;&nbsp;1관 4층 / 2관 3층에 위치해 있습니다. 더욱 자세한 위치는 [매장안내] 페이지에서 확인하실 수 있습니다.</a></li>
+								</ul>
+							</div><!--//cate_layer-->
+
+
+						</div>
+					</div>
+			</section><!--//section4-->
+
+			<section id="section-5">
+					<div class="inner">
+						<div id="company01">
+							<h3>1:1 문의</h3>
+							<!-- <input id="userEmail1" name="userEmail1" type="text" /> -->
+	
+							<table border="0" cellspacing="0" cellpadding="">
+								<caption>커뮤니티</caption>
+	
+								<tr>
+									<th>번호</th>
+									<th>주제</th>
+									<th>날짜</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다.</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다........</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다.................</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다.......................</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다.............................</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다...................................</td>
+									<td>19.06.17</td>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오늘의 내용을 알려드립니다.........................................</td>
+									<td>19.06.17</td>
+								</tr>
+							</table>
+	
+							<ul id="page">
+								<li><a href="javascript:;">&lt;</a></li>
+								<li><a href="javascript:;">1</a></li>
+								<li><a href="javascript:;">2</a></li>
+								<li><a href="javascript:;">3</a></li>
+								<li><a href="javascript:;">4</a></li>
+								<li><a href="javascript:;">5</a></li>
+								<li><a href="javascript:;">&gt;</a></li>
+							</ul>
+						</div>
+					</div>
+			</section><!--//section5-->
+		</div><!--//content -->
+	</div><!--//tabs -->
+
+	<script src="js/cbpFWTabs.js"></script>
+
+	<!--animate-->
+	<script src="./build/scrollanim.js"></script>
+
+	<script>
+		new CBPFWTabs( document.getElementById( 'tabs' ) );
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$('.cate_layer').hide();
+			$('.cate_btn').toggle (
+				function(){
+					$('.cate_layer').slideDown("fast");
+					$(".cate_btn").addClass("on");
+				},
+				function(){
+					$('.cate_layer').slideUp("fast");
+					$(".cate_btn").removeClass("on");
+				}
+			);
+		});
+
+		$(document).ready(function(){
+			$('.cate_layer2').hide();
+			$('.cate_btn2').toggle (
+				function(){
+					$('.cate_layer2').slideDown("fast");
+					$(".cate_btn2").addClass("on");
+				},
+				function(){
+					$('.cate_layer2').slideUp("fast");
+					$(".cate_btn2").removeClass("on");
+				}
+			);
+		});
+
+		$(document).ready(function(){
+			$('.cate_layer3').hide();
+			$('.cate_btn3').toggle (
+				function(){
+					$('.cate_layer3').slideDown("fast");
+					$(".cate_btn3").addClass("on");
+				},
+				function(){
+					$('.cate_layer3').slideUp("fast");
+					$(".cate_btn3").removeClass("on");
+				}
+			);
+		});
+
+		$(document).ready(function(){
+			$('.cate_layer4').hide();
+			$('.cate_btn4').toggle (
+				function(){
+					$('.cate_layer4').slideDown("fast");
+					$(".cate_btn4").addClass("on");
+				},
+				function(){
+					$('.cate_layer4').slideUp("fast");
+					$(".cate_btn4").removeClass("on");
+				}
+			);
+		});
+
+		$(document).ready(function(){
+			$('.cate_layer5').hide();
+			$('.cate_btn5').toggle (
+				function(){
+					$('.cate_layer5').slideDown("fast");
+					$(".cate_btn5").addClass("on");
+				},
+				function(){
+					$('.cate_layer5').slideUp("fast");
+					$(".cate_btn5").removeClass("on");
+				}
+			);
+		});
+	</script>
+</section><!--//foods_contents-->
+
+<footer>
+<div class="outer">
+	<div class="inner">
+		<ul>
+			<li><a href="javascript:;">회사소개</a></li>
+			<li><a href="javascript:;">채용정보</a></li>
+			<li><a href="javascript:;">이용약관</a></li>
+			<li><a href="javascript:;">개인정보처리방침</a></li>
+			<li><a href="javascript:;">대관문의</a></li>
+			<li><a href="javascript:;">오시는길</a></li>
+			<li><a href="javascript:;">사이트맵</a></li>
+		</ul>
+		<dl>
+			<dd>마리오쇼핑(주) 08511 서울특별시 금천구 디지털로 9길 23 (가산동 60-52) 대표이사 회장 홍성열｜개인정보관리책임자 : 정재명 부장</dd>
+			<dd>오프라인 매장 고객센터 : 02-2109-7000 / 마리오몰 고객센터 : 1522-3605</dd>
+			<dd>COPYRIGHT &copy; Mario Outlet Co.,Ltd. All Rights Reserved.</dd>
+		</dl>
+	</div><!--//inner-->
+</div><!--//outer-->
+</footer>
+</body>
+</html>

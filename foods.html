@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>마리오아울렛</title>
+<!--파비콘 생성-->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/import.css">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.css">
+
+<!-- Link Animation -->
+<link rel="stylesheet" href="./css/kissui.css">
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="stylesheet" href="./build/scrollanim.min.css">
+
+<!--FullDown Menu js-->
+<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/guide.js"></script>
+<script type="text/javascript" src="./js/hover.js"></script>
+<script type="text/javascript" src="./js/TweenMax.js"></script>
+<script type="text/javascript" src="./js/TweenLite.js"></script>
+
+<!--QNB_menu-->
+<script src="./js/init.js"></script>
+
+</head>
+<body>
+	<header id="sub"><!-- header-->
+		<div class="header01">
+			<div class="headerD"><!-- headerD-->	
+		
+			<!--상단 로고-->
+			<h1 class="logo"><a href="./index.html"><img src="./images/common/logo_2.png" alt="logo" /></a></h1>
+			
+			<!--gnb-->
+				<div class="gnbD">
+					<ul class="gnb">
+						<li class="gL1">
+							<a href="store.html" class="oneD">매장안내</a>
+							<div class="twoD1">
+								<a href="store.html"><span>층별안내</span></a>
+								<a href="store.html"><span>1관</span></a>
+								<a href="store.html"><span>2관</span></a>
+								<a href="store.html"><span>3관</span></a>
+							</div>
+						</li> 
+						
+						<li class="gL2">
+							<a href="foods.html" class="oneD">식당가안내</a>
+							<div class="twoD2">
+								<a href="foods.html"><span>식당가별 안내</span></a>
+								<a href="foods.html"><span>위치별 안내</span></a>											
+							</div>
+						</li>  
+					
+						<li class="gL3">
+							<a href="event.html" class="oneD">행사안내</a>
+							<div class="twoD3">
+								<a href="event.html"><span>쇼핑정보</span></a>
+								<a href="event.html"><span>문화공연</span></a>	
+							</div>
+						</li>  
+					
+						<li class="gL4">
+							<a href="service.html" class="oneD">고객서비스</a>
+							<div class="twoD4">
+								<a href="service.html"><span>멤버십 서비스</span></a>
+								<a href="service.html"><span>편의시설</span></a>
+								<a href="service.html"><span>자주 묻는 질문</span></a>
+								<a href="service.html"><span>1:1 문의</span></a>
+							</div>	
+						</li>  
+					
+						<li class="gL5">
+							<a href="company.html" class="oneD">마리오아울렛 소개</a>
+							<div class="twoD5">
+								<a href="company.html"><span>회사소개</span></a>
+								<a href="company.html"><span>마리오아울렛 뉴스</span></a>
+								<a href="company.html"><span>오시는 길</span></a>
+								<a href="company.html"><span>주차안내</span></a>
+							</div>
+						</li> 					
+						<li class="gL6"></li>
+							<a href="javascript:" class="oneD"><img src="./images/common/mariomall.png" /></a>
+						</li> 													
+					</ul><!--//gnb-->
+				</div><!--// gnbD -->
+			</div><!--// headerD -->
+		</div><!--//header01-->
+
+		<div class="header02">
+			<div class="inner">
+				<!--//태블릿 로고-->
+				<!-- <h1 class="tablet_logo"><a href="./index.html"><img src="./images/common/tablet_logo.png" alt="logo" /></a></h1> -->
+				<!--메뉴-->
+				<!-- <h1 class="tm_menu"><a href="#"><img src="./images/common/main_menu.gif" alt="menu" /></a></h1> -->
+
+				<div class="media-header">
+					<h1><a href="./index.html"><img src="./images/common/tablet_logo2.png" /></a></h1>   
+					
+					<a class="menu-icon" href="#"><img src="./images/common/sub_menu.gif" alt="menu" /></a>
+				<ul class="side-menu" style="overflow:auto;position:fixed;">
+				<h2 class="title"><a href="./index.html"><img src="./images/common/tablet_logo.png" /></a></h2>
+				<ul id="nav">
+					<li><a href="./store.html">매장안내</a>
+						<ul>
+							<li><a href="./store.html">층별안내</a></li>
+							<li><a href="./store.html">1관</a></li>
+							<li><a href="./store.html">2관</a></li>
+							<li><a href="./store.html">3관</a></li>
+						</ul>
+					</li>
+					<li><a href="./foods.html">식당가안내</a>
+						<ul>
+							<li><a href="./foods.html">식당가별 안내</a></li>
+							<li><a href="./foods.html">위치별 안내</a></li>
+						</ul>
+					</li>
+					<li><a href="./event.html">행사안내</a>
+						<ul>
+							<li><a href="./event.html">쇼핑정보</a></li>
+							<li><a href="./event.html">문화공연</a></li>
+						</ul>
+					</li>
+					<li><a href="./service.html">고객서비스</a>
+						<ul>
+							<li><a href="./service.html">멤버십 서비스</a></li>
+							<li><a href="./service.html">편의시설</a></li>
+							<li><a href="./service.html">자주 묻는 질문</a></li>
+							<li><a href="./service.html">1:1 문의</a></li>
+						</ul>
+					</li>
+					<li><a href="./company.html">마리오아울렛 소개</a>
+						<ul>
+							<li><a href="./company.html">회사소개</a></li>
+							<li><a href="./company.html">마리오아울렛 뉴스</a></li>
+							<li><a href="./company.html">오시는 길</a></li>
+							<li><a href="./company.html">주차안내</a></li>
+						</ul>
+					</li>
+					</div>
+				</ul>
+			</div>
+
+			</div><!--//inner-->
+		</div><!--//header02-->
+
+</header>
+
+<section id="foods_visual">
+    	<dl>
+			<dt>The World Fashion City</dt>
+			<dt>Mario Outlet</dt>
+		</dl>
+		
+		<!-- <ul id="page">
+			<li><a href="#" class="active"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#"></a></li>
+		</ul> -->
+</section><!--//store_visual-->
+
+<section id="foods_contents">
+	<div id="tabs" class="tabs">
+			<nav>
+				<ul>
+					<li><a href="#section-1" class="icon-shop"><span>층별안내</span></a></li>
+					<li><a href="#section-2" class="icon-cup"><span>위치별 안내</span></a></li>
+				</ul>
+			</nav>
+			<div class="content">
+				<section id="section-1">
+					<div class="outer">
+						<div id="foods_menu">
+							<ul>
+								<li><a href="javascript:void(0);" OnClick='foods(1);' id='foods_button1'>전체</a></li>
+								<li><a href="javascript:void(0);" OnClick='foods(2);' id='foods_button2'>한식</a></li>
+								<li><a href="javascript:void(0);" OnClick='foods(3);' id='foods_button3'>일/중/양식</a></li>
+								<li><a href="javascript:void(0);" OnClick='foods(4);' id='foods_button4'>패스트푸드/분식</a></li>
+								<li><a href="javascript:void(0);" OnClick='foods(5);' id='foods_button5'>카페&디저트</a></li>
+								<li><a href="javascript:void(0);" OnClick='foods(6);' id='foods_button6'>기타</a></li>
+							</ul>
+						</div><!--//foods_menu-->
+
+						<div class="Tabs_content">
+							<div id='foods1' style='display:block;'>
+								<div id="foods_list">
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list01.png" /></dd>
+											<dt>청실홍실</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list02.png" /></dd>
+											<dt>소이밥상</dt>
+											<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3850</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list03.png" /></dd>
+											<dt>골든키친</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list04.png" /></dd>
+											<dt>콘타이</dt>
+											<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3845</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list05.png" /></dd>
+											<dt>잣 품은 그집 호두과자</dt>
+											<dd id="text">마리오아울렛 1관 1층 <br> -</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list06.png" /></dd>
+											<dt>오가다</dt>
+											<dd id="text">마리오아울렛 1관 3층 <br> -</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list07.png" /></dd>
+											<dt>반반식당</dt>
+											<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2400</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list08.png" /></dd>
+											<dt>먹쉬돈나</dt>
+											<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-3833</dd>
+										</dl>
+									</div><!--//list-->
+									
+									<ul>
+										<li><a href="#">&lt;</a></li>
+										<li><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#">&gt;</a></li>
+									</ul>
+								</div><!--//foods_list-->
+							</div>
+
+							<div id="foods2" style="display:none;">
+									<div id="foods_list">
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list03.png" /></dd>
+												<dt>골든키친</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list07.png" /></dd>
+												<dt>반반식당</dt>
+												<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2400</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list09.png" /></dd>
+												<dt>속초코다리냉면</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list10.png" /></dd>
+												<dt>속초중앙시장순대</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list11.png" /></dd>
+												<dt>곤지암 소머리국밥</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list12.png" /></dd>
+												<dt>하남쭈꾸미</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list13.png" /></dd>
+												<dt>한국집</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list14.png" /></dd>
+												<dt>남순남 순대국</dt>
+												<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2424</dd>
+											</dl>
+										</div><!--//list-->
+										
+										<ul>
+											<li><a href="javascript:;">&lt;</a></li>
+											<li><a href="javascript:;">1</a></li>
+											<li><a href="javascript:;">2</a></li>
+											<li><a href="javascript:;">&gt;</a></li>
+										</ul>
+									</div><!--//foods_list-->
+							</div>
+
+							<div id="foods3" style="display:none;">
+									<div id="foods_list">
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list15.png" /></dd>
+												<dt>홍리마라탕</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> -</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list02.png" /></dd>
+												<dt>소이밥상</dt>
+												<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3850</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list04.png" /></dd>
+												<dt>콘타이</dt>
+												<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3845</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list16.png" /></dd>
+												<dt>속초중앙시장 해물짬뽕</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list17.png" /></dd>
+												<dt>아비꼬</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list18.png" /></dd>
+												<dt>브라운 돈까스</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+										</div><!--//list-->
+										<div id="list">
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list19.png" /></dd>
+												<dt>애머이</dt>
+												<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+											</dl>
+											<dl>
+												<dd id="img"><img src="./images/sub/sub_foods_list20.png" /></dd>
+												<dt>홍짜장</dt>
+												<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-2457</dd>
+											</dl>
+										</div><!--//list-->
+										
+										<ul>
+											<li><a href="javascript:;">&lt;</a></li>
+											<li><a href="javascript:;">1</a></li>
+											<li><a href="javascript:;">&gt;</a></li>
+										</ul>
+									</div><!--//foods_list-->
+								</div>
+
+							<div id="foods4" style="display:none;">
+								<div id="foods_list">
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list01.png" /></dd>
+											<dt>청실홍실</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list08.png" /></dd>
+											<dt>먹쉬돈나</dt>
+											<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-3833</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list21.png" /></dd>
+											<dt>부전어묵</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list22.png" /></dd>
+											<dt>우리동네 미미네</dt>
+											<dd id="text">마리오아울렛 1관5층 <br> 02-2067-3993</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list23.png" /></dd>
+											<dt>바르다 김선생</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list24.png" /></dd>
+											<dt>북촌손만두</dt>
+											<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-2457</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list25.png" /></dd>
+											<dt>스쿨푸드</dt>
+											<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2436</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list26.png" /></dd>
+											<dt>맥도날드</dt>
+											<dd id="text">마리오아울렛 1관 1층 <br> 070-7017-6527</dd>
+										</dl>
+									</div><!--//list-->
+									
+									<ul>
+										<li><a href="javascript:;">&lt;</a></li>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">&gt;</a></li>
+									</ul>
+								</div><!--//foods_list-->
+							</div>
+
+							<div id="foods5" style="display:none;">
+								<div id="foods_list">
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list05.png" /></dd>
+											<dt>잣 품은 그집 호두과자</dt>
+											<dd id="text">마리오아울렛 1관 1층 <br> -</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list06.png" /></dd>
+											<dt>오가다</dt>
+											<dd id="text">마리오아울렛 1관 3층 <br> -</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list27.png" /></dd>
+											<dt>아메리칸 트레일러</dt>
+											<dd id="text">마리오아울렛 3관 2층 <br> -</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list28.png" /></dd>
+											<dt>미스터 힐링</dt>
+											<dd id="text">마리오아울렛 1관 8층 <br> 02-2067-2088</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list29.png" /></dd>
+											<dt>백미당</dt>
+											<dd id="text">마리오아울렛 1관 1층 <br> -</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list30.png" /></dd>
+											<dt>달콤커피</dt>
+											<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+										</dl>
+									</div><!--//list-->
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list31.png" /></dd>
+											<dt>커피팩토리	</dt>
+											<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2421</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list32.png" /></dd>
+											<dt>빌리엔젤</dt>
+											<dd id="text">마리오아울렛 3관 6층 <br> 070-7017-3628</dd>
+										</dl>
+									</div><!--//list-->
+									
+									<ul>
+										<li><a href="javascript:;">&lt;</a></li>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">2</a></li>
+										<li><a href="javascript:;">&gt;</a></li>
+									</ul>
+								</div><!--//foods_list-->
+							</div>
+
+							<div id="foods6" style="display:none;">
+								<div id="foods_list">
+									<div id="list">
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list33.png" /></dd>
+											<dt>세븐일레븐</dt>
+											<dd id="text">마리오아울렛 3관 1층 <br> 02-2067-2141</dd>
+										</dl>
+										<dl>
+											<dd id="img"><img src="./images/sub/sub_foods_list33.png" /></dd>
+											<dt>세븐일레븐</dt>
+											<dd id="text">마리오아울렛 1관 1층 <br> 02-2109-7254</dd>
+										</dl>
+									</div><!--//list-->
+									
+									<ul>
+										<li><a href="javascript:;">&lt;</a></li>
+										<li><a href="javascript:;">1</a></li>
+										<li><a href="javascript:;">&gt;</a></li>
+									</ul>
+								</div><!--//foods_list-->
+							</div>
+						</div>
+				
+					</div><!--//outer-->
+				</section><!--//section1-->
+
+				<section id="section-2">
+						<div class="outer">
+								<div id="foods_menu">
+									<ul>
+										<li><a href="javascript:void(0);" OnClick='foods2(1);' id='foods2_button1'>마리오아울렛 1관</a></li>
+										<li><a href="javascript:void(0);" OnClick='foods2(2);' id='foods2_button2'>마리오아울렛 2관</a></li>
+										<li><a href="javascript:void(0);" OnClick='foods2(3);' id='foods2_button3'>마리오아울렛 3관</a></li>
+									</ul>
+								</div><!--//foods_menu-->
+
+								<div class="Tabs_content">
+									<div id='foods2_1' style='display:block;'>
+										<div id="foods_list">
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list15.png" /></dd>
+													<dt>홍리마라탕</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> -</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list01.png" /></dd>
+													<dt>청실홍실</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list03.png" /></dd>
+													<dt>골든키친</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list05.png" /></dd>
+													<dt>잣 품은 그집 호두과자</dt>
+													<dd id="text">마리오아울렛 1관 1층 <br> -</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list06.png" /></dd>
+													<dt>오가다</dt>
+													<dd id="text">마리오아울렛 1관 3층 <br> -</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list16.png" /></dd>
+													<dt>속초중앙시장 해물짬뽕</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list17.png" /></dd>
+													<dt>아비꼬</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list18.png" /></dd>
+													<dt>브라운 돈까스</dt>
+													<dd id="text">마리오아울렛 1관 5층 <br> 02-2067-3993</dd>
+												</dl>
+											</div><!--//list-->
+											
+											<ul>
+												<li><a href="javascript:;">&lt;</a></li>
+												<li><a href="javascript:;">1</a></li>
+												<li><a href="javascript:;">2</a></li>
+												<li><a href="javascript:;">3</a></li>
+												<li><a href="javascript:;">&gt;</a></li>
+											</ul>
+										</div><!--//foods_list-->
+									</div>
+
+									<div id="foods2_2" style="display:none;">
+										<div id="foods_list">
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list34.png" /></dd>
+													<dt>커피빈</dt>
+													<dd id="text">마리오아울렛 2관 3층 <br> 02-857-5501</dd>
+												</dl>
+											</div><!--//list-->
+
+											<ul>
+												<li><a href="javascript:;">&lt;</a></li>
+												<li><a href="javascript:;">1</a></li>
+												<li><a href="javascript:;">&gt;</a></li>
+											</ul>
+										</div><!--//foods_list-->
+									</div>
+
+									<div id="foods2_3" style="display:none;">
+										<div id="foods_list">
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list07.png" /></dd>
+													<dt>반반식당</dt>
+													<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2400</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list02.png" /></dd>
+													<dt>소이밥상</dt>
+													<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3850</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list04.png" /></dd>
+													<dt>콘타이</dt>
+													<dd id="text">마리오아울렛 3관 13층 <br> 02-2067-3845</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list08.png" /></dd>
+													<dt>먹쉬돈나</dt>
+													<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-3833</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list27.png" /></dd>
+													<dt>아메리칸 트레일러</dt>
+													<dd id="text">마리오아울렛 3관 2층 <br> -</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list33.png" /></dd>
+													<dt>세븐일레븐</dt>
+													<dd id="text">마리오아울렛 3관 1층 <br> 02-2067-2141</dd>
+												</dl>
+											</div><!--//list-->
+											<div id="list">
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list31.png" /></dd>
+													<dt>커피팩토리</dt>
+													<dd id="text">마리오아울렛 3관 12층 <br> 02-2067-2421</dd>
+												</dl>
+												<dl>
+													<dd id="img"><img src="./images/sub/sub_foods_list32.png" /></dd>
+													<dt>빌리엔젤</dt>
+													<dd id="text">마리오아울렛 3관 6층 <br> 02-2067-3628</dd>
+												</dl>
+											</div><!--//list-->
+											
+											<ul>
+												<li><a href="javascript:;">&lt;</a></li>
+												<li><a href="javascript:;">1</a></li>
+												<li><a href="javascript:;">2</a></li>
+												<li><a href="javascript:;">&gt;</a></li>
+											</ul>
+										</div><!--//foods_list-->
+									</div>
+								</div>
+							</div><!--//outer-->
+						</section><!--//section2-->
+					</div><!--//content -->
+				</div><!--//tabs -->
+	
+			</div><!--//content-->
+	
+			<script src="js/cbpFWTabs.js"></script>
+	
+			<script>
+				new CBPFWTabs( document.getElementById( 'tabs' ) );
+			</script>
+
+			<script language>
+				foods(1); //처음에 활성화 시킬 탭 번호를 인수로 설정
+				function foods(n) {
+				for(var i = 1; i < 7; i++) {
+					obj = document.getElementById('foods'+i);
+					menu = document.getElementById('foods_button'+i);
+					if ( n == i ) {
+						obj.style.display = "block";
+						menu.style.background="#606060";
+						menu.style.color="#fff";
+					} else {
+						obj.style.display = "none";
+						menu.style.background="";
+						menu.style.color="";
+					}
+				}
+				}
+			</script>
+
+			<script language>
+			foods2(1); //처음에 활성화 시킬 탭 번호를 인수로 설정
+			function foods2(n) {
+				for(var i = 1; i < 7; i++) {
+					obj = document.getElementById('foods2_'+i);
+					menu = document.getElementById('foods2_button'+i);
+					if ( n == i ) {
+						obj.style.display = "block";
+						menu.style.background="#606060";
+						menu.style.color="#fff";
+					} else {
+						obj.style.display = "none";
+						menu.style.background="";
+						menu.style.color="";
+					}
+				}
+			}
+			</script>
+	</section><!--//foods_contents-->
+
+<footer>
+<div class="outer">
+	<div class="inner">
+		<ul>
+			<li><a href="javascript:;">회사소개</a></li>
+			<li><a href="javascript:;">채용정보</a></li>
+			<li><a href="javascript:;">이용약관</a></li>
+			<li><a href="javascript:;">개인정보처리방침</a></li>
+			<li><a href="javascript:;">대관문의</a></li>
+			<li><a href="javascript:;">오시는길</a></li>
+			<li><a href="javascript:;">사이트맵</a></li>
+		</ul>
+		<dl>
+			<dd>마리오쇼핑(주) 08511 서울특별시 금천구 디지털로 9길 23 (가산동 60-52) 대표이사 회장 홍성열｜개인정보관리책임자 : 정재명 부장</dd>
+			<dd>오프라인 매장 고객센터 : 02-2109-7000 / 마리오몰 고객센터 : 1522-3605</dd>
+			<dd>COPYRIGHT &copy; Mario Outlet Co.,Ltd. All Rights Reserved.</dd>
+		</dl>
+	</div><!--//inner-->
+</div><!--//outer-->
+</footer>
+</body>
+</html>

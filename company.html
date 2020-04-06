@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>마리오아울렛</title>
+<!--파비콘 생성-->
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./css/import.css">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="./swiper-4.5.0/dist/css/swiper.css">
+
+<!-- Link Animation -->
+<link rel="stylesheet" href="./css/kissui.css">
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="stylesheet" href="./build/scrollanim.min.css">
+
+<!--FullDown Menu js-->
+<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/guide.js"></script>
+<script type="text/javascript" src="./js/hover.js"></script>
+<script type="text/javascript" src="./js/TweenMax.js"></script>
+<script type="text/javascript" src="./js/TweenLite.js"></script>
+
+<!--QNB_menu-->
+<script src="./js/init.js"></script>
+
+<!--map-->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+</head>
+<body onload="initialize(); initialize2();">
+	<header id="sub"><!-- header-->
+		<div class="header01">
+			<div class="headerD"><!-- headerD-->	
+		
+			<!--상단 로고-->
+			<h1 class="logo"><a href="./index.html"><img src="./images/common/logo_2.png" alt="logo" /></a></h1>
+			
+			<!--gnb-->
+				<div class="gnbD">
+					<ul class="gnb">
+						<li class="gL1">
+							<a href="store.html" class="oneD">매장안내</a>
+							<div class="twoD1">
+								<a href="store.html"><span>층별안내</span></a>
+								<a href="store.html"><span>1관</span></a>
+								<a href="store.html"><span>2관</span></a>
+								<a href="store.html"><span>3관</span></a>
+							</div>
+						</li> 
+						
+						<li class="gL2">
+							<a href="foods.html" class="oneD">식당가안내</a>
+							<div class="twoD2">
+								<a href="foods.html"><span>식당가별 안내</span></a>
+								<a href="foods.html"><span>위치별 안내</span></a>											
+							</div>
+						</li>  
+					
+						<li class="gL3">
+							<a href="event.html" class="oneD">행사안내</a>
+							<div class="twoD3">
+								<a href="event.html"><span>쇼핑정보</span></a>
+								<a href="event.html"><span>문화공연</span></a>	
+							</div>
+						</li>  
+					
+						<li class="gL4">
+							<a href="service.html" class="oneD">고객서비스</a>
+							<div class="twoD4">
+								<a href="service.html"><span>멤버십 서비스</span></a>
+								<a href="service.html"><span>편의시설</span></a>
+								<a href="service.html"><span>자주 묻는 질문</span></a>
+								<a href="service.html"><span>1:1 문의</span></a>
+							</div>	
+						</li>  
+					
+						<li class="gL5">
+							<a href="company.html" class="oneD">마리오아울렛 소개</a>
+							<div class="twoD5">
+								<a href="company.html"><span>회사소개</span></a>
+								<a href="company.html"><span>마리오아울렛 뉴스</span></a>
+								<a href="company.html"><span>오시는 길</span></a>
+								<a href="company.html"><span>주차안내</span></a>
+								<!-- <a href="company.html"><span>대관문의</span></a> -->
+							</div>
+						</li> 					
+						<li class="gL6"></li>
+							<a href="javascript:" class="oneD"><img src="./images/common/mariomall.png" /></a>
+						</li> 													
+					</ul><!--//gnb-->
+				</div><!--// gnbD -->
+			</div><!--// headerD -->
+		</div><!--//header01-->
+
+		<div class="header02">
+			<div class="inner">
+				<!--//태블릿 로고-->
+				<!-- <h1 class="tablet_logo"><a href="./index.html"><img src="./images/common/tablet_logo.png" alt="logo" /></a></h1> -->
+				<!--메뉴-->
+				<!-- <h1 class="tm_menu"><a href="#"><img src="./images/common/main_menu.gif" alt="menu" /></a></h1> -->
+
+				<div class="media-header">
+					<h1><a href="./index.html"><img src="./images/common/tablet_logo2.png" /></a></h1>   
+					
+					<a class="menu-icon" href="#"><img src="./images/common/sub_menu.gif" alt="menu" /></a>
+				<ul class="side-menu" style="overflow:auto;position:fixed;">
+				<h2 class="title"><a href="./index.html"><img src="./images/common/tablet_logo.png" /></a></h2>
+				<ul id="nav">
+					<li><a href="./store.html">매장안내</a>
+						<ul>
+							<li><a href="./store.html">층별안내</a></li>
+							<li><a href="./store.html">1관</a></li>
+							<li><a href="./store.html">2관</a></li>
+							<li><a href="./store.html">3관</a></li>
+						</ul>
+					</li>
+					<li><a href="./foods.html">식당가안내</a>
+						<ul>
+							<li><a href="./foods.html">식당가별 안내</a></li>
+							<li><a href="./foods.html">위치별 안내</a></li>
+						</ul>
+					</li>
+					<li><a href="./event.html">행사안내</a>
+						<ul>
+							<li><a href="./event.html">쇼핑정보</a></li>
+							<li><a href="./event.html">문화공연</a></li>
+						</ul>
+					</li>
+					<li><a href="./service.html">고객서비스</a>
+						<ul>
+							<li><a href="./service.html">멤버십 서비스</a></li>
+							<li><a href="./service.html">편의시설</a></li>
+							<li><a href="./service.html">자주 묻는 질문</a></li>
+							<li><a href="./service.html">1:1 문의</a></li>
+						</ul>
+					</li>
+					<li><a href="./company.html">마리오아울렛 소개</a>
+						<ul>
+							<li><a href="./company.html">회사소개</a></li>
+							<li><a href="./company.html">마리오아울렛 뉴스</a></li>
+							<li><a href="./company.html">오시는 길</a></li>
+							<li><a href="./company.html">주차안내</a></li>
+						</ul>
+					</li>
+					</div>
+				</ul>
+			</div>
+
+			</div><!--//inner-->
+		</div><!--//header02-->
+	
+	</header>
+
+<section id="company_visual">
+		<dl>
+			<dt>The World Fashion City</dt>
+			<dt>Mario Outlet</dt>
+		</dl>
+</section>
+
+<section id="company_contents">
+	<div id="tabs" class="tabs">
+		<nav>
+			<ul>
+				<li><a href="#section-1" class="icon-shop"><span>회사소개</span></a></li>
+				<li><a href="#section-2" class="icon-cup"><span>MO 뉴스</span></a></li>
+				<li><a href="#section-4" class="icon-cup"><span>오시는 길</span></a></li>
+				<li><a href="#section-5" class="icon-cup"><span>주차안내</span></a></li>
+				<!-- <li><a href="#section-6" class="icon-cup"><span>대관문의</span></a></li> -->
+			</ul>
+		</nav>
+		<div class="content">
+			<section id="section-1">
+				<div class="inner">
+					<h3>회사소개</h3>
+			
+					<div id="company01">
+						<dl id="text">
+							<dt>대한민국 최초 정통 패션 아울렛에서<br>
+								<span>아시아 최대 도심형 프리미엄 아울렛</span>으로</dt>
+							<dd id="contents" data-kui-anim="fadeIn">마리오아울렛은 1980년 마리오상사를 시작으로 여성 니트브랜드 ‘까르뜨니트’와 
+								대한민국 최초 정통 패션 아울렛 ‘마리오아울렛’을 통해 패션∙유통의 리딩기업으로 성장 했습니다. 
+								2001년 마리오아울렛 1관을 오픈한 뒤, 고객 여러분의 성원으로 발전과 도약을 거듭해 
+								지난 2013년에는 리뉴얼 오픈을 통해 750여 개에 이르는 국내∙외 유명브랜드를 보유한 아시아 최대 규모의
+								도심형 프리미엄 아울렛을 완성 했습니다.
+								<br>
+								<br>
+								다양한 브랜드를 바탕으로 쾌적하고 고급스러운 시설과 자연휴게공간 마리오아울렛 가든, 
+								동물농장 등으로 고객들에게 쇼핑을 넘어 문화, 엔터테인먼트 등 특별한 경험과 가치를 제공합니다. 
+								또한 교외로 멀리 나가지 않아도 도심 속에서 초대형 프리미엄 아울렛을 만나볼 수 있어 
+								폭넓은 쇼핑∙문화 서비스를 누릴 수 있습니다.</dd>
+						</dl>
+					</div>
+			
+					<div id="company02">
+						<dl>
+							<dt><span>유명 브랜드 상품</span>을 365일<br>
+							<span>합리적인 가격</span>으로 제공하는 <span>‘가치소비’</span>명소</dt>
+							<dd id="contents" data-kui-anim="fadeIn">마리오아울렛은 유명 브랜드의 품질 좋은 상품을 365일 최대 90% 할인된 가격으로 제공하는 
+								합리적인 쇼핑 명소 입니다. 국내∙외 패션 브랜드는 물론이고 키즈테마파크, 서점, 리빙, F&B 등 
+								남녀노소가 모두 함께 둘러볼 수 있는 다양한 쇼핑 카테고리를 보유해 편리한 원스톱 쇼핑이 가능합니다. 
+								브랜드 상설매장은 물론이고 브랜드 종합관, 팩토리 아울렛, 편집숍, 팝업스토어 등 
+								다양한 매장에서 맞춤형 쇼핑을 즐길 수 있습니다.</dd>
+						</dl>
+					</div>
+				</div>
+			</section><!--//section1-->
+
+			<section id="section-2">
+				<div class="inner">
+					<h3>마리오아울렛 뉴스</h3>
+			
+					<div id="company01">
+						<!-- <input id="userEmail1" name="userEmail1" type="text" /> -->
+
+						<table border="0" cellspacing="0" cellpadding="">
+
+							<caption>커뮤니티</caption>
+
+							<tr>
+								<th>번호</th>
+								<th>주제</th>
+								<th>날짜</th>
+							</tr>
+							<tr>
+								<td>07</td>
+								<td>[매일경제] 젊어진 마리오아울렛…방문객 70% 껑충</td>
+								<td>19.07.05</td>
+							</tr>
+							<tr>
+								<td>06</td>
+								<td>[한국섬유신문] 마리오아울렛, 리뉴얼 그랜드 오픈 1주년 할인 프로모션</td>
+								<td>19.07.01</td>
+							</tr>
+							<tr>
+								<td>05</td>
+								<td>[MBN] 마리오아울렛, '마리오니 대학생 기자단 2기' 발족</td>
+								<td>19.06.21</td>
+							</tr>
+							<tr>
+								<td>04</td>
+								<td>[전기신문] 마리오아울렛 온라인몰 BI 변경</td>
+								<td>19.06.20</td>
+							</tr>
+							<tr>
+								<td>03</td>
+								<td>[어패럴뉴스] 마리오아울렛, 고객 소통 강화</td>
+								<td>19.06.19</td>
+							</tr>
+							<tr>
+								<td>02</td>
+								<td>[MBN] 마리오아울렛, 전기자동차 충전시스템 도입</td>
+								<td>19.06.18</td>
+							</tr>
+							<tr>
+								<td>01</td>
+								<td>[중앙시사매거진] 2019 소비자 선정 최고의 브랜드 대상, 마리오아울렛</td>
+								<td>19.06.17</td>
+							</tr>
+						</table>
+
+						<ul id="page">
+							<li><a href="javascript:;">&lt;</a></li>
+							<li><a href="javascript:;">1</a></li>
+							<li><a href="javascript:;">2</a></li>
+							<li><a href="javascript:;">3</a></li>
+							<li><a href="javascript:;">4</a></li>
+							<li><a href="javascript:;">5</a></li>
+							<li><a href="javascript:;">&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+			</section><!--//section2-->
+
+			<section id="section-4">
+				<div class="inner">
+					<h3>오시는길</h3>
+
+					<div id="map">
+						<div id="map_canvas"></div>
+					</div>
+
+					<div id="text">
+						<dl>
+							<dt>지하철 이용하실 경우</dt>
+								<dd>1호선, 7호선<br>
+								가산디지털단지(마리오아울렛)역 4번 출구</dd>
+								
+							<dt>공항버스 이용하실 경우</dt>
+							<dd><span>인천공항 출발</span><br>
+								6004번 버스 → 가산디지털단지역 하차 → 도보 5분<br>
+								<br>
+								<span>김포공항 출발</span><br />
+								6014번 버스 → 광명사거리역 하차 <br> → 지하철 7호선 이용 가산디지털단지(마리오아울렛)역</dd>
+						</dl>
+						<dl>
+							<dt>버스 이용하실 경우</dt>
+							<dd><span>정류장1 - 마리오아울렛 3관 앞 하차</span><br>
+							지선버스 : 5537<br>
+							
+							마을버스 : 금천03, 금천07<br>
+							<br>
+							<span>정류장2 - 마리오아울렛 1관 건너편 하차</span><br>
+							지선버스 : 5616, 5712, 5536, 5714<br>
+							
+							간선버스 : 503, 504, 571, 652<br>
+							<br>
+							<span>정류장3 - 마리오아울렛 1관 건너편 하차</span><br>
+							지선버스 : 5536, 5616, 5712, 5714<br>
+							
+							간선버스 : 503, 571<br>
+							<br>
+							<span>정류장4 - 마리오아울렛 1관 맞은편 하차</span><br>
+							간선버스 : 504, 652</dd>
+						</dl>
+					</div>
+				</div>
+			</section><!--//section4-->
+
+			<section id="section-5">
+				<div class="inner">
+					<h3>주차안내</h3>
+
+					<div id="map">
+						<div id="map_canvas2"></div>
+					</div>
+
+					<div id="text">
+					<dl>
+						<dt>주차 안내</dt>
+						<dd>1,134여대 동시 주차 가능한 주차 시설이 구비되어 있습니다.<br>
+							(1관: 400대, 2관 146대, 3관 588대)</dd>
+
+						<dt>주차장 사전 정산 시스템 운영</dt>
+						<dd>결제시 차량번호를 등록하면 무료 주차 시간이 자동 적용<br>
+
+							출차시 주차 정산기에서 <br> 신용카드, 삼성페이, 페이코, T머니 사용하여 결제 가능<br>
+							(현금 결제 불가)<br>
+
+							(입차 후 30분 : 무료주차 / 추가 10분당 : 500원)</dd>
+					</dl>
+					<dl>
+						<dt>주차장 이용 요금 안내</dt>
+						<dd><span>무료주차 :</span><br>
+							
+							5만원 미만 구매시 : 1 시간<br>
+							
+							5만원 이상 ~ 10만원 미만 구매시 : 2 시간<br>
+							
+							10만원 이상 ~ 20만원 미만 구매시 : 3 시간<br>
+							
+							20만원 이상 ~ 30만원 미만 구매시 : 4 시간<br>
+							
+							30만원 이상 ~ 40만원 미만 구매시 : 5 시간<br>
+							
+							40만원 이상 ~ 50만원 미만 구매시 : 6 시간<br>
+							
+							50만원 이상 : 당일무료</dd>
+						
+						<dt><span>[예외 사항]</span></dt>
+
+						<dd>• <span>닥터 밸런스</span> 이용시 <span>무료주차 3시간</span><br>
+							
+							• <span>지투존 볼링장&펍</span> 이용시 <span>무료주차 2시간</span><br>
+							
+							• <span>식당가 이용시 무료주차 2시간</span><br>
+							
+							• <span>준오헤어 이용시 당일 무료주차</span><br>
+							
+							• <span>수선실, 편의점 이용은</span> 무료 주차 적용 대상에서 제외</dd>
+							
+						<dt><span>유료주차 :</span></dt>
+							<dd>입차 후 30분 : 무료주차 / 추가 10 분당 500원</dd>
+					</dl>
+					</div>
+				</div>
+			</section><!--//section5-->
+		</div><!--//content -->
+	</div><!--//tabs -->
+
+	<!--animate-->
+	<script src="./build/scrollanim.js"></script>
+
+	<script src="js/cbpFWTabs.js"></script>
+
+	<script>
+		new CBPFWTabs( document.getElementById( 'tabs' ) );
+	</script>
+
+	<script>
+		function initialize() {
+			var Y_point			= 37.478723;
+			var X_point			= 126.885117;
+			var zoomLevel		= 17;
+			var markerTitle		= "마리오아울렛";
+			var markerMaxWidth	= 300;
+
+			// ��ǳ�� ����
+			var contentString	= '<div id="content">' +
+			'<div id="siteNotice">' +
+			'</div>'+
+			'<h2 id="firstHeading" class="firstHeading">마리오아울렛</h2><br>'+
+			'<div id="bodyContent">'+
+			'<p>서울특별시 금천구 가산동 60-52 <br />' +
+			'<a href="http://www.mariooutlet.co.kr/" target="_blank">http://www.mariooutlet.co.kr/</a></p>'+
+			'</div>'+
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+								zoom: zoomLevel,
+								center: myLatlng,
+								mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+			var marker = new google.maps.Marker({
+													position: myLatlng,
+													map: map,
+													title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+														{
+															content: contentString,
+															maxWidth: markerMaxWidth
+														}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+
+		function initialize2() {
+			var Y_point			= 37.478723;
+			var X_point			= 126.885117;
+			var zoomLevel		= 17;
+			var markerTitle		= "마리오아울렛";
+			var markerMaxWidth	= 300;
+
+			// ��ǳ�� ����
+			var contentString	= '<div id="content">' +
+			'<div id="siteNotice">' +
+			'</div>'+
+			'<h2 id="firstHeading" class="firstHeading">마리오아울렛</h2><br>'+
+			'<div id="bodyContent">'+
+			'<p>서울특별시 금천구 가산동 60-52 <br />' +
+			'<a href="http://www.mariooutlet.co.kr/" target="_blank">http://www.mariooutlet.co.kr/</a></p>'+
+			'</div>'+
+			'</div>';
+
+			var myLatlng = new google.maps.LatLng(Y_point, X_point);
+			var mapOptions = {
+				zoom: zoomLevel,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById('map_canvas2'), mapOptions);
+
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: markerTitle
+			});
+
+			var infowindow = new google.maps.InfoWindow(
+				{
+					content: contentString,
+					maxWidth: markerMaxWidth
+				}
+			);
+
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+
+</section>
+
+<footer>
+<div class="outer">
+	<div class="inner">
+		<ul>
+			<li><a href="javascript:;">회사소개</a></li>
+			<li><a href="javascript:;">채용정보</a></li>
+			<li><a href="javascript:;">이용약관</a></li>
+			<li><a href="javascript:;">개인정보처리방침</a></li>
+			<li><a href="javascript:;">대관문의</a></li>
+			<li><a href="javascript:;">오시는길</a></li>
+			<li><a href="javascript:;">사이트맵</a></li>
+		</ul>
+		<dl>
+			<dd>마리오쇼핑(주) 08511 서울특별시 금천구 디지털로 9길 23 (가산동 60-52) 대표이사 회장 홍성열｜개인정보관리책임자 : 정재명 부장</dd>
+			<dd>오프라인 매장 고객센터 : 02-2109-7000 / 마리오몰 고객센터 : 1522-3605</dd>
+			<dd>COPYRIGHT &copy; Mario Outlet Co.,Ltd. All Rights Reserved.</dd>
+		</dl>
+	</div><!--//inner-->
+</div><!--//outer-->
+</footer>
+</body>
+</html>
